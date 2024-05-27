@@ -15,8 +15,7 @@
             color: #333;
             text-align: center;
             overflow: hidden;
-            background: url('https://images.unsplash.com/photo-1594047983829-5207c624d67d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGJpcnRoZGF5JTIwY2FrZXxlbnwwfHx8fDE2Mjg2MjU3MzI&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(to right, #ff8c00, #ff4500); /* Gradient background */
         }
         .container {
             background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
@@ -25,6 +24,7 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             animation: fadeIn 2s ease-in-out;
             max-width: 500px;
+            transform: perspective(1000px) rotateX(20deg); /* 3D rotation effect */
         }
         h1 {
             color: #ff6347;
